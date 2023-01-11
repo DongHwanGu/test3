@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SwaggerApiTest</name>
+    </assembly>
+    <members>
+        <member name="T:SwaggerApiTest.Controllers.WeatherForecastController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:SwaggerApiTest.Controllers.WeatherForecastController.#ctor(Microsoft.Extensions.Logging.ILogger{SwaggerApiTest.Controllers.WeatherForecastController})">
+            <summary>
+            
+            </summary>
+            <param name="logger"></param>
+        </member>
+        <member name="M:SwaggerApiTest.Controllers.WeatherForecastController.Get(System.String,System.Int32)">
+             <summary>
+             건물 네모 매물 검색
+             </summary>
+             <param name="BuildingManagementSerialNumber"></param>
+             <param name="Type"></param>
+             <returns>number</returns>
+             <returns>articleType</returns>
+             <returns>monthlyRent</returns>
+             <remarks>
+             
+             Parameters:
+                 
+                 (string) BuildingManagementSerialNumber : 건물 고유 번호
+                 (int?) Type : 타입(1: 상가, 2: 사무실, 3: 상가+사무실)
+            
+             </remarks>
+             <response code="200">Success</response>
+             <response code="201">Returns the newly created item</response>
+             <response code="400">If the item is null</response>
+        </member>
+    </members>
+</doc>

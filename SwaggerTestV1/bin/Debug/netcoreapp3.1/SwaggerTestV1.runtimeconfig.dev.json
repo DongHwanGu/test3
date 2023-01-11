@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\슈가힐_백엔드_구동환\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\슈가힐_백엔드_구동환\\.nuget\\packages"
+    ]
+  }
+}

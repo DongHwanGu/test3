@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Z0TU2FIOq0vWbenKAyKzoKIKcd7A3vEm0YUG2F7HnE5n/RLAEmlQ3uzK2IvN6UmD77meHIfKab16LCsqUu1Udg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\슈가힐_백엔드_구동환\\Desktop\\TestProject\\SwaggerTestV1\\SwaggerTestV1\\SwaggerTestV1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\슈가힐_백엔드_구동환\\.nuget\\packages\\jquery\\3.6.0\\jquery.3.6.0.nupkg.sha512"
+  ],
+  "logs": []
+}

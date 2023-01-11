@@ -1,0 +1,40 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome11</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+    <input type="hidden" id="token" />
+
+    <input type="button" id="btnReCaptcha" value="캡차전송" />
+</div>
+
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script src="https://www.google.com/recaptcha/api.js?render=6LeerdUiAAAAAHP_e-wwF2ax2DcDPdaokfmyfaRr"></script>
+<script>
+    $(document).ready(function () {
+        grecaptcha.ready(function () {
+            grecaptcha.execute('6LeerdUiAAAAAHP_e-wwF2ax2DcDPdaokfmyfaRr', { action: 'submit' }).then(function (token) {
+                // Add your logic to submit to your backend server here.
+                window.console.log(token);
+                $('#token').val(token);
+            });
+        });
+
+        $("#btnReCaptcha").click(function () {
+            $.ajax({
+                type: 'GET',
+                url: 'http://localhost:5000/api/captchas/google?token=' + $('#token').val(),
+                contentType: 'json',
+                success: function (result) {
+                    console.log(result);
+                }
+            });
+        });
+    });
+    
+</script>
